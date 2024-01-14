@@ -1,0 +1,9 @@
+h1 {
+    color: darkgreen;
+}
+
+@media(max-width: 768px) {
+    h1 {
+        color:coral
+    }
+}
