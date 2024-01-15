@@ -1,21 +1,45 @@
 /* Global View aka Desktop View */
-h1 {
-    color: darkgreen;
-    font-family: 'Courier New', Courier, monospace;
+.container {
+    background-color: rgb(43,226,147);
+    min-height: 500px; 
+    max-width: 1024px;
+    /* Center's the container div */
+    margin: 0px auto;
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.col {
+    background-color: rgb(247,8,131);
+    min-height: 200px;
+    width: 30%;
+    margin-bottom: 20px;
+    /* margin-bottom: 20px;
+    margin-top: 20px; */
+}
+
+.hide-desktop-only {
+    display: none;
 }
 
 /* Tablet View */
 @media(max-width: 768px) {
-    h1 {
-        color:coral;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    .col {
+        width: 45%;
+    }
+    .hide-desktop-only {
+        display: block;
     }
 }
 
 /* Mobile View */
-@media(max-width: 500px) {
-    h1 {
-        color: black;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+@media(max-width: 400px) {
+    .col {
+        width: 100%;
+    }
+    .hide-mobile-only {
+        display: none;
     }
 }
