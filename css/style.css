@@ -1,9 +1,21 @@
+/* Global View aka Desktop View */
 h1 {
     color: darkgreen;
+    font-family: 'Courier New', Courier, monospace;
 }
 
+/* Tablet View */
 @media(max-width: 768px) {
     h1 {
-        color:coral
+        color:coral;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+}
+
+/* Mobile View */
+@media(max-width: 500px) {
+    h1 {
+        color: black;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
 }
