@@ -1,6 +1,5 @@
 /* Global View aka Desktop View */
 .container {
-    background-color: rgb(43,226,147);
     min-height: 500px; 
     max-width: 1024px;
     /* Center's the container div */
@@ -12,7 +11,7 @@
 }
 
 .col {
-    /* background-color: rgb(247,8,131);
+    background-color: rgb(43,226,147);
     min-height: 200px; */
     width: 30%;
     margin-bottom: 20px;
