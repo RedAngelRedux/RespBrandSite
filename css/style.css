@@ -33,6 +33,7 @@ a:visited {
 } 
 a:hover { 
     color: white;
+    background-color: gray;
     text-decoration: none; 
 } 
 a:active { 
@@ -58,7 +59,7 @@ header nav {
     min-height: 500px; 
     max-width: 1024px;
     margin: 0px auto; /* Center's the container div */
-    padding-top: 140px;
+    padding-top: 130px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -101,13 +102,39 @@ header nav {
 }
 
 /* Mobile View */
-@media(max-width: 400px) {
+@media(max-width: 600px) {
+
     .col {
         width: 100%;
     }
+
     .hide-mobile-only {
         display: none;
     }
+
+    header {
+        display: block;
+        text-align: center;
+    }
+
+    header nav {
+        padding-right: 0;
+    }
+
+    .myButton {
+        display: block;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .logo {
+        margin: 10px 0;
+    }
+
+    .container {
+        padding-top: 165px;
+    }
+
 }
 
 .accent {
