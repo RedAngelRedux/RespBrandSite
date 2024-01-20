@@ -60,7 +60,7 @@ header nav {
     min-height: 500px; 
     max-width: 1024px;
     margin: 0px auto; /* Center's the container div */
-    padding-top: 130px;
+    padding-top: 120px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -162,9 +162,9 @@ header nav {
         margin: 10px 0;
     }
 
-    .container {
+    /* .container {
         padding-top: 165px;
-    }
+    } */
 
 }
 
