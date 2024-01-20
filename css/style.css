@@ -1,3 +1,4 @@
+
 /* Global View aka Desktop View */
 body {
     font-family: 'Asap';
@@ -91,14 +92,44 @@ header nav {
     font-weight: 700;
 }
 
+.mobile-wrapper {
+    display: none;
+}
+
 /* Tablet View */
 @media(max-width: 768px) {
+
     .col {
         width: 45%;
     }
+
     .hide-desktop-only {
         display: block;
     }
+
+    nav {
+        display: none;
+    }
+
+    .mobile-wrapper {
+        display: block;
+        padding-right: 30px;
+        padding-top: 10px;
+    }
+
+    .mobile-nav {
+        display: none;
+        position: absolute;
+    }
+
+    .mobileButton {
+        display: block;
+        background-color: coral;
+        border: solid 1px;
+        padding: 5px;
+        margin-left: -40px;
+        }
+
 }
 
 /* Mobile View */
@@ -112,10 +143,10 @@ header nav {
         display: none;
     }
 
-    header {
+    /* header {
         display: block;
         text-align: center;
-    }
+    } */
 
     header nav {
         padding-right: 0;
